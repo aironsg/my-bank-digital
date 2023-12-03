@@ -35,7 +35,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_email"
-            style="@style/Edit_Login_Theme"
+            style="@style/Edit_Theme"
             android:hint="@string/hint_email"
             android:drawableStart="@drawable/ic_email"
             android:drawableTint="@color/color_default"
@@ -51,7 +51,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_password"
-            style="@style/Edit_Login_Theme"
+            style="@style/Edit_Theme"
             android:layout_width="match_parent"
             android:hint="@string/hint_password"
             android:drawableStart="@drawable/ic_password"

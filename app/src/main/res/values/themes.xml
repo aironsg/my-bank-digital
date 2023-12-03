@@ -6,9 +6,9 @@
          <item name="android:windowBackground">@color/color_default</item>
     </style>
 
-<!--    Themes of Login Layout-->
+<!--    Themes Generic-->
 
-    <style name="Edit_Login_Theme" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Edit_Theme" parent="Theme.Material3.DayNight.NoActionBar">
          <item name="background">@drawable/edit_style</item>
          <item name="backgroundTint">@null</item>
          <item name="android:layout_height">48dp</item>
@@ -20,6 +20,10 @@
          <item name="android:drawablePadding">10dp</item>
          <item name="android:drawableTint">@color/color_default</item>
     </style>
+
+
+<!--    Themes of Login Layout-->
+
 
     <style name="Text_Login_Theme" parent="Theme.Material3.DayNight.NoActionBar">
          <item name="android:textColor">@color/color_default</item>
@@ -33,6 +37,32 @@
          <item name="android:textStyle">bold</item>
          <item name="android:text">@string/txt_button_login_fragment</item>
 
+    </style>
+
+
+<!--    Recover Layout-->
+
+    <style name="Button_Recover_theme" parent="Theme.Material3.DayNight.NoActionBar">
+         <item name="android:textColor">@color/white</item>
+         <item name="android:textSize">22sp</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:text">@string/txt_btn_send_recover_fragment</item>
+
+    </style>
+    <style name="Title_Toolbar_theme" parent="Theme.Material3.DayNight.NoActionBar">
+         <item name="android:textColor">@color/white</item>
+         <item name="android:textSize">24sp</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Description_recover_account_theme" parent="Theme.Material3.DayNight.NoActionBar">
+         <item name="android:textColor">@color/color_default</item>
+         <item name="android:textSize">16sp</item>
+         <item name="android:textStyle">italic</item>
+         <item name="android:layout_gravity">center</item>
+         <item name="android:textAlignment">center</item>
+         <item name="android:layout_margin">24dp</item>
     </style>
 
 
