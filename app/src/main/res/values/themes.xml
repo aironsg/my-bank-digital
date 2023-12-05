@@ -9,8 +9,7 @@
 <!--    Themes Generic-->
 
     <style name="Edit_Theme" parent="Theme.Material3.DayNight.NoActionBar">
-         <item name="background">@drawable/edit_style</item>
-         <item name="backgroundTint">@null</item>
+
          <item name="android:layout_height">48dp</item>
          <item name="android:layout_width">match_parent</item>
          <item name="android:textColor">@color/color_default</item>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "277014910549",
+    "project_id": "my-bank-digital",
+    "storage_bucket": "my-bank-digital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277014910549:android:ce5a5452473c7908e326dc",
+        "android_client_info": {
+          "package_name": "br.com.devairon.mybankdigital"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC2X2xH1iJObCglMSdDzlnPasVlsMFfIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

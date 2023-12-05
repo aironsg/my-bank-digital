@@ -20,7 +20,7 @@
     <string name="txt_title_email_recover_fragment">E-mail</string>
     <string name="txt_title_toolbar_recover_fragment">Recuperação de Conta</string>
     <string name="txt_description_recover_fragment">Digite seu e-mail para recuperação de conta, um link será enviado para o e-mail cadastrado</string>
-    <string name="txt_btn_send_recover_fragment">Enviar</string>
+    <string name="txt_btn_send_recover_fragment">Enviar Email</string>
 
 
 <!--    Register Account-->

@@ -59,11 +59,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
 
-                android:id="@+id/edit_recover_account"
+                android:id="@+id/edit_email_recover_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_style"
-                android:drawableStart="@drawable/ic_email"
+                android:drawableStart="@drawable/ic_mail_line"
                 android:drawablePadding="10dp"
                 android:drawableTint="@color/color_default" />
         </com.google.android.material.textfield.TextInputLayout>
