@@ -1,6 +1,9 @@
 package br.com.devairon.mybankdigital.data.repository.auth
 
-class AuthFirebaseDataSourceImpl() : AuthFirebaseDataSource {
+import com.google.firebase.database.FirebaseDatabase
+
+class AuthFirebaseDataSourceImpl  (
+    firebaseDatabase: FirebaseDatabase) : AuthFirebaseDataSource {
 
     override suspend fun login(email: String, password: String) {
         TODO("Not yet implemented")

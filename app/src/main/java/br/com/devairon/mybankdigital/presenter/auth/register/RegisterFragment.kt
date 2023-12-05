@@ -9,8 +9,9 @@ import android.widget.Toast
 import br.com.devairon.mybankdigital.R
 import br.com.devairon.mybankdigital.databinding.FragmentRecoverBinding
 import br.com.devairon.mybankdigital.databinding.FragmentRegisterBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
