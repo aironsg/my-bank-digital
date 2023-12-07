@@ -5,9 +5,10 @@ import br.com.devairon.mybankdigital.data.model.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
+import javax.inject.Inject
 import kotlin.coroutines.suspendCoroutine
 
-class AuthFirebaseDataSourceImpl(
+class AuthFirebaseDataSourceImpl @Inject constructor(
     private val auth: FirebaseAuth
 ) : AuthFirebaseDataSource {
 
