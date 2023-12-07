@@ -1,10 +1,12 @@
 package br.com.devairon.mybankdigital.domain.auth
 
+import br.com.devairon.mybankdigital.data.model.User
 import br.com.devairon.mybankdigital.data.repository.auth.AuthFirebaseDataSourceImpl
+import javax.inject.Inject
 
-class RegisterUseCase(private val authFirebaseDataSourceImpl: AuthFirebaseDataSourceImpl) {
+class RegisterUseCase @Inject constructor(private val authFirebaseDataSourceImpl: AuthFirebaseDataSourceImpl) {
 
-    suspend operator fun invoke(name: String, email: String, phoneNumber: String, password: String){
-        return authFirebaseDataSourceImpl.register(name, email, phoneNumber, password)
+    suspend operator fun invoke(user: User): User{
+        return authFirebaseDataSourceImpl.register(user)
     }
 }

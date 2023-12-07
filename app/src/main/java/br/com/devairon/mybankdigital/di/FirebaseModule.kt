@@ -1,5 +1,6 @@
 package br.com.devairon.mybankdigital.di
 
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import dagger.Module
 import dagger.Provides
@@ -16,6 +17,12 @@ object FirebaseModule {
     @Provides
     fun provideFirebaseDataBase() : FirebaseDatabase{
         return FirebaseDatabase.getInstance()
+    }
+
+    @Singleton
+    @Provides
+    fun provideFirebaseAuth() : FirebaseAuth {
+        return FirebaseAuth.getInstance()
     }
 }
 

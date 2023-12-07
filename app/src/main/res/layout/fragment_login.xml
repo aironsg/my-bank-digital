@@ -28,39 +28,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            style="@style/Text_Login_Theme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_title_email" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_email"
-            style="@style/Edit_Theme"
-            android:hint="@string/hint_email"
-            android:drawableStart="@drawable/ic_mail_line"
-            android:drawableTint="@color/color_default"
-            android:background="@drawable/edit_style"
-            android:inputType="textEmailAddress" />
-
-        <TextView
-            style="@style/Text_Login_Theme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/txt_title_password" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_password"
-            style="@style/Edit_Theme"
+<!--        Edit Email-->
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:hint="@string/hint_password"
-            android:drawableStart="@drawable/ic_lock_password_line"
-            android:drawableEnd="@drawable/ic_visibility"
-            android:layout_height="48dp"
-            android:background="@drawable/edit_style"
-            android:inputType="textPassword" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/txt_hint_email"
+            style="@style/Edit_Theme"
+            >
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_style"
+                android:drawableStart="@drawable/ic_mail_line"
+                android:drawableTint="@color/color_default"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        Edit Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/color_default"
+            android:hint="@string/txt_hint_password"
+            style="@style/Edit_Theme"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_style"
+                android:drawableStart="@drawable/ic_lock_password_line"
+                android:drawableTint="@color/color_default"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        Recover e create Account-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
