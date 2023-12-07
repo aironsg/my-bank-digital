@@ -9,8 +9,9 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import br.com.devairon.mybankdigital.R
 import br.com.devairon.mybankdigital.databinding.FragmentLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null

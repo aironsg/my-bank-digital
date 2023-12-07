@@ -8,8 +8,9 @@ import android.widget.Toast
 
 import androidx.fragment.app.Fragment
 import br.com.devairon.mybankdigital.databinding.FragmentRecoverBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class RecoverFragment : Fragment() {
 
     private var _binding: FragmentRecoverBinding? = null
