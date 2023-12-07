@@ -112,6 +112,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                app:passwordToggleTint="@color/color_default"
+                app:passwordToggleEnabled="true"
                 android:hint="@string/txt_hint_password"
                 style="@style/Edit_Theme"
                 >
@@ -130,6 +132,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                app:passwordToggleTint="@color/color_default"
+                app:passwordToggleEnabled="true"
                 android:hint="@string/txt_hint_passoword_confirmation"
                 style="@style/Edit_Theme"
                 >
