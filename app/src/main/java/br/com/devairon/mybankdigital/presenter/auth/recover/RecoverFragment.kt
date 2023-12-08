@@ -8,6 +8,7 @@ import android.widget.Toast
 
 import androidx.fragment.app.Fragment
 import br.com.devairon.mybankdigital.databinding.FragmentRecoverBinding
+import br.com.devairon.mybankdigital.utils.initToolbar
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -28,6 +29,7 @@ class RecoverFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initListener()
+        initToolbar(binding.toolbar)
     }
 
     private fun initListener() {

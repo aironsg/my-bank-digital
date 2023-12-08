@@ -9,6 +9,7 @@ import android.widget.Toast
 import br.com.devairon.mybankdigital.R
 import br.com.devairon.mybankdigital.databinding.FragmentRecoverBinding
 import br.com.devairon.mybankdigital.databinding.FragmentRegisterBinding
+import br.com.devairon.mybankdigital.utils.initToolbar
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -29,6 +30,7 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initListener()
+        initToolbar(binding.toolbar)
     }
 
     private fun initListener() {

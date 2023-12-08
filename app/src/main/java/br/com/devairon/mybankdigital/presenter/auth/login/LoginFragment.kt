@@ -37,7 +37,11 @@ class LoginFragment : Fragment() {
         }
 
         binding.btnCreateAccount.setOnClickListener {
+                findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
 
+        binding.btnRecoverAccount.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_recoverFragment)
         }
 
     }
