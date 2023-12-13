@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import br.com.devairon.mybankdigital.R
 import br.com.devairon.mybankdigital.data.model.User
 import br.com.devairon.mybankdigital.databinding.FragmentRecoverBinding
@@ -106,6 +107,7 @@ class RegisterFragment : Fragment() {
                         "Usuario Criado com Sucesso!",
                         Toast.LENGTH_SHORT
                     ).show()
+                    findNavController().navigate(R.id.action_global_homeFragment)
                 }
 
                 is StateView.Error -> {
