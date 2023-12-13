@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="@string/txt_hint_email"
+            app:hintTextColor="@color/hint_color"
             style="@style/Edit_Theme"
             >
 
@@ -54,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:passwordToggleEnabled="true"
+            app:hintTextColor="@color/hint_color"
             app:passwordToggleTint="@color/color_default"
             android:hint="@string/txt_hint_password"
             style="@style/Edit_Theme"
@@ -64,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_style"
+                android:inputType="textPassword"
                 android:drawableStart="@drawable/ic_lock_password_line"
                 android:drawableTint="@color/color_default"
                 android:drawablePadding="10dp"

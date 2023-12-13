@@ -1,5 +1,6 @@
 package br.com.devairon.mybankdigital.presenter.auth.recover
 
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import br.com.devairon.mybankdigital.domain.auth.RecoverUseCase
 import br.com.devairon.mybankdigital.utils.StateView
@@ -10,7 +11,7 @@ import javax.inject.Inject
 @HiltViewModel
 class RecoverViewModel @Inject constructor(
    private val recoverUseCase: RecoverUseCase
-) {
+) : ViewModel() {
     fun recover(email: String) = liveData(Dispatchers.IO) {
         try {
             emit(StateView.Loading())

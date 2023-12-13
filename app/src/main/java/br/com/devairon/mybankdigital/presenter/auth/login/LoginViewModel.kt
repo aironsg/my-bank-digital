@@ -1,6 +1,7 @@
 package br.com.devairon.mybankdigital.presenter.auth.login
 
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import br.com.devairon.mybankdigital.data.model.User
 import br.com.devairon.mybankdigital.domain.auth.LoginUseCase
@@ -12,7 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class LoginViewModel @Inject constructor(
    private val loginUseCase: LoginUseCase
-) {
+) : ViewModel() {
 
     fun login(email: String, password:String) = liveData(Dispatchers.IO){
 
