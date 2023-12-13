@@ -9,12 +9,12 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="250dp"
+        android:contentDescription="@string/txt_logo_app"
         android:src="@drawable/ic_bank_fill"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/txt_logo_app"
         app:tint="@color/white" />
 
     <LinearLayout
@@ -28,15 +28,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-<!--        Edit Email-->
+        <!--        Edit Email-->
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Edit_Theme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="@string/txt_hint_email"
-            app:hintTextColor="@color/hint_color"
-            style="@style/Edit_Theme"
-            >
+            app:hintTextColor="@color/hint_color">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_email"
@@ -44,47 +43,43 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_style"
                 android:drawableStart="@drawable/ic_mail_line"
-                android:drawableTint="@color/color_default"
                 android:drawablePadding="10dp"
-                />
+                android:drawableTint="@color/color_default"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--        Edit Password-->
+        <!--        Edit Password-->
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Edit_Theme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:passwordToggleEnabled="true"
-            app:hintTextColor="@color/hint_color"
-            app:passwordToggleTint="@color/color_default"
             android:hint="@string/txt_hint_password"
-            style="@style/Edit_Theme"
-            >
+            app:hintTextColor="@color/hint_color"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/color_default">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_style"
-                android:inputType="textPassword"
-                android:drawableStart="@drawable/ic_lock_password_line"
-                android:drawableTint="@color/color_default"
-                android:drawablePadding="10dp"
-                />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--        Recover e create Account-->
+        <!--        Recover e create Account-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/btn_create_account"
                 style="@style/Text_Login_Theme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginTop="10dp"
+                android:layout_weight="1"
                 android:text="@string/txt_register_account_login_fragment" />
 
             <TextView
@@ -92,19 +87,19 @@
                 style="@style/Text_Login_Theme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAlignment="textEnd"
                 android:layout_marginTop="10dp"
-                android:text="@string/txt_recover_account_login_fragment" />
+                android:layout_weight="1"
+                android:text="@string/txt_recover_account_login_fragment"
+                android:textAlignment="textEnd" />
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_login"
+            style="@style/Button_Login_theme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Button_Login_theme"
             android:layout_marginTop="16dp"
-            android:background="@drawable/btn_style"/>
+            android:background="@drawable/btn_style" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -114,7 +109,7 @@
             android:layout_marginTop="10dp"
             android:indeterminateTint="@color/color_default"
             android:visibility="invisible"
-            tools:visibility="visible"/>
+            tools:visibility="visible" />
 
     </LinearLayout>
 
