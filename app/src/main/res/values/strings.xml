@@ -1,5 +1,5 @@
 <resources>
-<!--    APP name-->
+    <!--    APP name-->
     <string name="app_name">Meu Banco Digital</string>
 
 
@@ -16,18 +16,21 @@
     <string name="txt_register_account_login_fragment">Crie sua conta</string>
 
 
-<!--    Recover Account-->
+    <!--    Recover Account-->
     <string name="txt_title_email_recover_fragment">E-mail</string>
     <string name="txt_title_toolbar_recover_fragment">Recuperação de Conta</string>
     <string name="txt_description_recover_fragment">Digite seu e-mail para recuperação de conta, um link será enviado para o e-mail cadastrado</string>
     <string name="txt_btn_send_recover_fragment">Enviar Email</string>
 
 
-<!--    Register Account-->
+    <!--    Register Account-->
     <string name="txt_hint_name">Nome</string>
     <string name="txt_hint_email">E-mail</string>
     <string name="txt_hint_phone_number">Telefone</string>
     <string name="txt_hint_password">Senha</string>
     <string name="txt_hint_passoword_confirmation">Confirme sua senha</string>
     <string name="txt_btn_create_account">Cadastrar</string>
+    <string name="txt_hint_create_account">Criar Conta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

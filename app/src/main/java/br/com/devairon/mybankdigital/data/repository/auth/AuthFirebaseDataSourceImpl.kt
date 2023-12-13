@@ -1,11 +1,13 @@
 package br.com.devairon.mybankdigital.data.repository.auth
 
+import android.util.Log
 import android.widget.Toast
 import br.com.devairon.mybankdigital.data.model.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
 import javax.inject.Inject
+import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 class AuthFirebaseDataSourceImpl @Inject constructor(
@@ -29,26 +31,25 @@ class AuthFirebaseDataSourceImpl @Inject constructor(
         }
     }
 
-    override suspend fun register(
-        user: User
-    ): User {
+    override suspend fun register(user: User): User {
         return suspendCoroutine { continuation ->
-            auth.createUserWithEmailAndPassword(user.email, user.password)
-                .addOnCompleteListener { task ->
+            auth.createUserWithEmailAndPassword(user.email,user.password)
+                .addOnCompleteListener{ task ->
                     if (task.isSuccessful) {
                         continuation.resumeWith(Result.success(user))
                     } else {
-                        task.exception?.let {
-                            continuation.resumeWith(Result.failure(it))
-                        }
+                       task.exception?.let {
+                           continuation.resumeWith(Result.failure(it))
+                       }
                     }
-
                 }
 
         }
 
 
     }
+
+
 
     override suspend fun recover(email: String) {
         return suspendCoroutine { continuation ->

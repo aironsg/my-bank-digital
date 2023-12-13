@@ -1,27 +1,29 @@
-package br.com.devairon.mybankdigital.presenter.auth.register
+package br.com.devairon.mybankdigital.presenter.auth.login
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import br.com.devairon.mybankdigital.data.model.User
-import br.com.devairon.mybankdigital.domain.auth.RegisterUseCase
+import br.com.devairon.mybankdigital.domain.auth.LoginUseCase
 import br.com.devairon.mybankdigital.utils.StateView
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import javax.inject.Inject
 
 @HiltViewModel
-class RegisterViewModel @Inject constructor(
-    private val registerUseCase: RegisterUseCase
+class LoginViewModel @Inject constructor(
+   private val loginUseCase: LoginUseCase
 ) : ViewModel() {
 
-    fun register(user: User) = liveData(Dispatchers.IO){
+    fun login(email: String, password:String) = liveData(Dispatchers.IO){
+
         try {
             emit(StateView.Loading())
-            registerUseCase.invoke(user)
-            emit(StateView.Success(user))
-
-        }catch (ex : Exception){
+            loginUseCase.invoke(email,password)
+            emit(StateView.Success(null))
+        }catch (ex: Exception){
             emit(StateView.Error(ex.message))
         }
     }
+
 }

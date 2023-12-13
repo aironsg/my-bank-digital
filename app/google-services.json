@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "277014910549",
+    "firebase_url": "https://my-bank-digital-default-rtdb.firebaseio.com",
     "project_id": "my-bank-digital",
     "storage_bucket": "my-bank-digital.appspot.com"
   },
